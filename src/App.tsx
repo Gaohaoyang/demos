@@ -1,14 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-// import loadable from '@loadable/component'
-
-// const FerrisWheel = loadable(() => import('./FerrisWheel'))
+import React from 'react'
+// import logo from './logo.svg'
+import './App.css'
+import { Link } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <nav>
+        <ul>
+          {/* <li>
+            <Link to="/">Home</Link>
+          </li> */}
+          <li>
+            <Link to="/FerrisWheel">FerrisWheel</Link>
+          </li>
+          <li>
+            <Link to="/MultiRedBags">MultiRedBags</Link>
+          </li>
+        </ul>
+      </nav>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -21,10 +32,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
       {/* <FerrisWheel /> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

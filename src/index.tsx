@@ -4,10 +4,10 @@ import loadable from '@loadable/component'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-
-import { createHashRouter, RouterProvider, Route } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 const FerrisWheel = loadable(() => import('./FerrisWheel'))
+const MultiRedBags = loadable(() => import('./MultiRedBags'))
 
 const router = createHashRouter([
   {
@@ -18,12 +18,18 @@ const router = createHashRouter([
     path: '/FerrisWheel',
     element: <FerrisWheel />,
   },
+  {
+    path: '/MultiRedBags',
+    element: <MultiRedBags />,
+  },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div>
+      <RouterProvider router={router} />
+    </div>
   </React.StrictMode>
 )
 
