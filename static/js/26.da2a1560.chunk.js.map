@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/26.da2a1560.chunk.js","mappings":"2HAMA,UAJoB,WAClB,OAAO,wCACR,C","sources":["FerrisWheel/index.tsx"],"sourcesContent":["import React from 'react'\n\nconst FerrisWheel = () => {\n  return <div>FerrisWheel</div>\n}\n\nexport default FerrisWheel\n"],"names":[],"sourceRoot":""}
