@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import loadable from '@loadable/component'
+
+// const FerrisWheel = loadable(() => import('./FerrisWheel'))
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <FerrisWheel /> */}
     </div>
   );
 }
