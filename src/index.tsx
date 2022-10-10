@@ -6,8 +6,12 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
-const FerrisWheel = loadable(() => import('./FerrisWheel'))
-const MultiRedBags = loadable(() => import('./MultiRedBags'))
+const FerrisWheel = loadable(() => import('./FerrisWheel'), {
+  fallback: <div>Loading...</div>,
+})
+const MultiRedBags = loadable(() => import('./MultiRedBags'), {
+  fallback: <div>Loading...</div>,
+})
 
 const router = createHashRouter([
   {
