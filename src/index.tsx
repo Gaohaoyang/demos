@@ -5,11 +5,11 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
+import { createHashRouter, RouterProvider, Route } from 'react-router-dom'
 
 const FerrisWheel = loadable(() => import('./FerrisWheel'))
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
