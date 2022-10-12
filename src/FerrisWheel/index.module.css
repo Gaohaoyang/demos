@@ -14,7 +14,7 @@
 }
 
 .wheel {
-  background-image: url(https://gw.alicdn.com/imgextra/i2/O1CN015bnUEw1WoTdMXvfRB_!!6000000002835-2-tps-210-210.png);
+  background-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01cEsqmB1d0HXD5uw9p_!!6000000003673-2-tps-420-420.png);
   width: 210px;
   height: 210px;
   background-size: 210px 210px;
@@ -29,18 +29,20 @@
   /* background-color: #333; */
   position: absolute;
   transform-origin: top center;
-  background-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01y9qAlO20aDmABzX2t_!!6000000006865-2-tps-40-40.png);
+  background-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01ZxhhY61Xb1cGJ6xj6_!!6000000002941-2-tps-80-80.png);
   background-size: 40px 40px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bottom {
-  background-image: url(https://gw.alicdn.com/imgextra/i4/O1CN01H6p6Z920i0VmKGsg2_!!6000000006882-2-tps-114-157.png);
+  background-image: url(https://gw.alicdn.com/imgextra/i4/O1CN018Q9UBx1w8xjwBQEhP_!!6000000006264-2-tps-228-314.png);
   width: 114px;
   height: 157px;
   position: absolute;
   top: 103px;
   left: 48px;
-
+  background-size: 114px 157px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
