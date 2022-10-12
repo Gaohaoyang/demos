@@ -1,23 +1,6 @@
 {
   "name": "demos",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@loadable/component": "^5.15.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.64",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -25,6 +8,28 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "pub": "yarn build && yarn deploy"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.15.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-react": "^7.18.6",
+    "@types/loadable__component": "^5.13.4",
+    "react-scripts": "5.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.64",
+    "@types/react": "^18.0.21",
+    "typescript": "^4.8.4",
+    "@types/react-dom": "^18.0.6",
+    "gh-pages": "^4.0.0"
   },
   "eslintConfig": {
     "extends": [
@@ -43,12 +48,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/preset-react": "^7.18.6",
-    "@types/loadable__component": "^5.13.4",
-    "gh-pages": "^4.0.0"
   },
   "homepage": "https://gaohaoyang.github.io/demos"
 }
