@@ -4,8 +4,8 @@ import React from 'react'
  * 摩天轮
  */
 
-const FerrisWheel = () => {
+function FerrisWheel() {
   return <div>FerrisWheel</div>
 }
 
-export default FerrisWheel;
+export default FerrisWheel

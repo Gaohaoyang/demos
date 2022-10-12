@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MultiRedBags = () => {
+function MultiRedBags() {
   return <div>MultiRedBags</div>
 }
 
