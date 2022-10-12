@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkdemos=self.webpackChunkdemos||[]).push([[26],{26:function(e,s,n){n.r(s);n(791);var r=n(184);s.default=function(){return(0,r.jsx)("div",{children:"FerrisWheel"})}}}]);
-//# sourceMappingURL=26.da2a1560.chunk.js.map
