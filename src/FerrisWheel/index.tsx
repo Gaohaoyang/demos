@@ -24,7 +24,7 @@ function FerrisWheel() {
         <div className={styles.wheel} ref={wheelDomRef}>
           <div className={styles.roomsArea}>
             {
-              getPos(202 / 2, 10).map((item, index) => (
+              getPos(202 / 2, 8).map((item, index) => (
                 <div
                   key={index}
                   className={`${styles.room} wheelRooms`}
