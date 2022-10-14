@@ -1,6 +1,7 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useEffect, useRef } from 'react'
 import styles from './index.module.css'
-import hexPos from './utils/hexPos'
+import getPos from './utils/getPos'
 import wheelAndRoomsRotate from './utils/rotateAnimation'
 
 /**
@@ -10,7 +11,10 @@ function FerrisWheel() {
   const wheelDomRef = useRef<HTMLDivElement>(null)
   useEffect(() => {
     if (wheelDomRef.current) {
-      wheelAndRoomsRotate(wheelDomRef.current, wheelDomRef.current?.querySelectorAll('.wheelRooms'))
+      wheelAndRoomsRotate(
+        wheelDomRef.current,
+        wheelDomRef.current?.querySelectorAll('.wheelRooms'),
+      )
     }
   }, [])
 
@@ -18,19 +22,20 @@ function FerrisWheel() {
     <div className={styles.container}>
       <div className={styles.ferris}>
         <div className={styles.wheel} ref={wheelDomRef}>
-          {
-            hexPos(202 / 2).map((item, index) => (
-              <div
-                // eslint-disable-next-line react/no-array-index-key
-                key={index}
-                className={`${styles.room} wheelRooms`}
-                style={{
-                  top: `${item.top + 4}px`,
-                  left: `${item.left - 20 + 4}px`,
-                }}
-              />
-            ))
-          }
+          <div className={styles.roomsArea}>
+            {
+              getPos(202 / 2, 10).map((item, index) => (
+                <div
+                  key={index}
+                  className={`${styles.room} wheelRooms`}
+                  style={{
+                    top: `${item.y}px`,
+                    left: `${item.x - 20}px`,
+                  }}
+                />
+              ))
+            }
+          </div>
         </div>
         <div className={styles.bottom} />
       </div>

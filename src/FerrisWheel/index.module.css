@@ -1,14 +1,15 @@
 .container {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  justify-content: center;
 }
 
 .ferris {
-  width: 210px;
-  height: 400px;
+  /* width: 210px;
+  height: 400px; */
   /* background-color: #333 */
   position: relative;
 }
@@ -21,6 +22,12 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.roomsArea {
+  position: absolute;
+  top: 105px;
+  left: 105px;
 }
 
 .room {
