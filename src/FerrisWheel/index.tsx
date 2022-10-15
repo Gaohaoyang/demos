@@ -30,7 +30,7 @@ function FerrisWheel() {
       animationRef.current = new WheelAndRoomsRotate(
         wheelDomRef.current,
         wheelDomRef.current?.querySelectorAll('.wheelRooms'),
-        true,
+        false,
       )
 
       gui.add(guiObj, 'count', 6, 16, 1).onFinishChange((e: number) => {
