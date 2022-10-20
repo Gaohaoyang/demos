@@ -20,7 +20,7 @@ function LoadingPoints() {
       <br />
       <br />
       <div>
-        long dots Animation
+        long dots animation
         <DotsAnimation dotsNum={30} />
       </div>
 
