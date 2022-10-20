@@ -8,7 +8,7 @@ const index = () => (
   >
     <div style={{ fontSize: '26px' }}>
       loading
-      <DotsAnimation dotsNum={8} />
+      <DotsAnimation />
     </div>
   </div>
 )
