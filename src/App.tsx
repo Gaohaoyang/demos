@@ -15,6 +15,9 @@ function App() {
             <Link to="/FerrisWheel">FerrisWheel</Link>
           </li>
           <li>
+            <Link to="/LoadingDots">LoadingDots</Link>
+          </li>
+          <li>
             <Link to="/MultiRedBags">MultiRedBags</Link>
           </li>
         </ul>

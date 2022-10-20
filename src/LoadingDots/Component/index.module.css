@@ -1,0 +1,23 @@
+@keyframes pointAnimation {
+  0% {
+    transform: translateY(0) translateZ(0);
+  }
+
+  30% {
+    transform: translateY(-50%) translateZ(0);
+  }
+
+  60% {
+    transform: translateY(0px) translateZ(0);
+  }
+
+  100% {
+    transform: translateY(0px) translateZ(0);
+  }
+}
+
+.point {
+  margin-left: 3px;
+  animation: pointAnimation 700ms ease-out 0s infinite;
+  display: inline-block;
+}

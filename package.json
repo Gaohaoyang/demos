@@ -56,6 +56,12 @@
       "@typescript-eslint/semi": [
         "error",
         "never"
+      ],
+      "react/require-default-props": [
+        "error",
+        {
+          "functions": "ignore"
+        }
       ]
     }
   },

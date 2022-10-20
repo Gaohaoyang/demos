@@ -12,6 +12,7 @@ const FerrisWheel = loadable(() => import('./FerrisWheel'), {
 const MultiRedBags = loadable(() => import('./MultiRedBags'), {
   fallback: <div>Loading...</div>,
 })
+const LoadingDots = loadable(() => import('./LoadingDots'))
 
 const router = createHashRouter([
   {
@@ -25,6 +26,10 @@ const router = createHashRouter([
   {
     path: '/MultiRedBags',
     element: <MultiRedBags />,
+  },
+  {
+    path: '/LoadingDots',
+    element: <LoadingDots />,
   },
 ])
 
