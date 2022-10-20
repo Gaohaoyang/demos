@@ -2,7 +2,7 @@ import React from 'react'
 import DotsAnimation from './Component'
 import styles from './index.module.css'
 
-function LoadingPoints() {
+function LoadingDots() {
   return (
     <div
       className={styles.wrap}
@@ -28,4 +28,4 @@ function LoadingPoints() {
   )
 }
 
-export default LoadingPoints
+export default LoadingDots

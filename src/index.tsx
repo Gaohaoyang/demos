@@ -5,12 +5,13 @@ import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import LoadingPage from './LoadingPage'
 
 const FerrisWheel = loadable(() => import('./FerrisWheel'), {
-  fallback: <div>Loading...</div>,
+  fallback: <LoadingPage />,
 })
 const MultiRedBags = loadable(() => import('./MultiRedBags'), {
-  fallback: <div>Loading...</div>,
+  fallback: <LoadingPage />,
 })
 const LoadingDots = loadable(() => import('./LoadingDots'))
 
