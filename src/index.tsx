@@ -15,6 +15,8 @@ const MultiRedBags = loadable(() => import('./MultiRedBags'), {
 })
 const LoadingDots = loadable(() => import('./LoadingDots'))
 
+const CompositeImage = loadable(() => import('./CompositeImage'))
+
 const router = createHashRouter([
   {
     path: '/',
@@ -31,6 +33,10 @@ const router = createHashRouter([
   {
     path: '/LoadingDots',
     element: <LoadingDots />,
+  },
+  {
+    path: '/CompositeImage',
+    element: <CompositeImage />,
   },
 ])
 
