@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdemos=self.webpackChunkdemos||[]).push([[44],{8044:function(e,s,u){u.r(s);u(2791);var n=u(184);s.default=function(){return(0,n.jsx)("div",{children:"MultiRedBags"})}}}]);
+//# sourceMappingURL=44.7c4b6f62.chunk.js.map

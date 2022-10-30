@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/44.7c4b6f62.chunk.js","mappings":"8HAQA,UANA,WAGE,OAAO,yCACR,C","sources":["MultiRedBags/index.tsx"],"sourcesContent":["import React from 'react'\n\nfunction MultiRedBags() {\n  // console.log('render multiRedBags')\n\n  return <div>MultiRedBags</div>\n}\n\nexport default MultiRedBags\n"],"names":[],"sourceRoot":""}

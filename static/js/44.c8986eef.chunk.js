@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkdemos=self.webpackChunkdemos||[]).push([[44],{44:function(e,s,n){n.r(s);n(791);var u=n(184);s.default=function(){return console.log("render multiRedBags"),(0,u.jsx)("div",{children:"MultiRedBags"})}}}]);
-//# sourceMappingURL=44.c8986eef.chunk.js.map
