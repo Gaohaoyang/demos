@@ -73,6 +73,8 @@ function CompositeImage() {
                   const image = canvas
                     .toDataURL('image/png')
                     .replace('image/png', 'image/octet-stream')
+                  console.log(image)
+
                   const a = document.createElement('a')
                   a.setAttribute('download', 'my-image.png')
                   a.setAttribute('href', image)
