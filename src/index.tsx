@@ -19,6 +19,8 @@ const CompositeImage = loadable(() => import('./CompositeImage'))
 
 const VerticalSlide = loadable(() => import('./VerticalSlide'))
 
+const CoinsFly = loadable(() => import('./CoinsFly'))
+
 const router = createHashRouter([
   {
     path: '/',
@@ -43,6 +45,10 @@ const router = createHashRouter([
   {
     path: '/VerticalSlide',
     element: <VerticalSlide />,
+  },
+  {
+    path: '/CoinsFly',
+    element: <CoinsFly />,
   },
 ])
 

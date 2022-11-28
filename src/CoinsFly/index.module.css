@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.coin {
+  width: 80px;
+  height: 80px;
+  background-image: url(https://gw.alicdn.com/imgextra/i4/O1CN01hVWasj25i4dZdV9sS_!!6000000007559-2-tps-160-160.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.origin {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #607D8B;
+  position: absolute;
+  top: 390px;
+  left: 190px;
+}
+
+.target {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #9E9E9E;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+}
