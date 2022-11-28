@@ -12,7 +12,7 @@ function VerticalSlide() {
         { value: '-100%', duration: 300 },
         { value: '-200%', duration: 300, delay: 1500 },
       ],
-      delay: anime.stagger(2100),
+      delay: anime.stagger(1900),
       easing: 'easeInQuad',
       loop: true,
     })
