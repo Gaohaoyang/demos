@@ -17,6 +17,8 @@ const LoadingDots = loadable(() => import('./LoadingDots'))
 
 const CompositeImage = loadable(() => import('./CompositeImage'))
 
+const VerticalSlide = loadable(() => import('./VerticalSlide'))
+
 const router = createHashRouter([
   {
     path: '/',
@@ -37,6 +39,10 @@ const router = createHashRouter([
   {
     path: '/CompositeImage',
     element: <CompositeImage />,
+  },
+  {
+    path: '/VerticalSlide',
+    element: <VerticalSlide />,
   },
 ])
 

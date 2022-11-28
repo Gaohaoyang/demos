@@ -23,6 +23,9 @@ function App() {
           <li>
             <Link to="/CompositeImage">CompositeImage</Link>
           </li>
+          <li>
+            <Link to="/VerticalSlide">VerticalSlide</Link>
+          </li>
         </ul>
       </nav>
     </div>

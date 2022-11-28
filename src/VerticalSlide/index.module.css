@@ -1,0 +1,29 @@
+h1{
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  background-color: #D84315;
+  width: 200px;
+  height: 50px;
+  border-radius: 999px;
+  margin-top: 40px;
+  margin-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.row {
+  color: #ddd;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+}
