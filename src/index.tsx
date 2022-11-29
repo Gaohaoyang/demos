@@ -33,6 +33,10 @@ const StickyContainer = loadable(() => import('./StickyContainer'), {
   fallback: <LoadingPage />,
 })
 
+const TopNotification = loadable(() => import('./TopNotification'), {
+  fallback: <LoadingPage />,
+})
+
 const router = createHashRouter([
   {
     path: '/',
@@ -65,6 +69,10 @@ const router = createHashRouter([
   {
     path: '/StickyContainer',
     element: <StickyContainer />,
+  },
+  {
+    path: '/TopNotification',
+    element: <TopNotification />,
   },
 ])
 

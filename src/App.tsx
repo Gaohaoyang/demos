@@ -32,6 +32,9 @@ function App() {
           <li>
             <Link to="/StickyContainer">StickyContainer</Link>
           </li>
+          <li>
+            <Link to="/TopNotification">TopNotification</Link>
+          </li>
         </ul>
       </nav>
     </div>
