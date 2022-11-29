@@ -29,6 +29,9 @@ function App() {
           <li>
             <Link to="/CoinsFly">CoinsFly</Link>
           </li>
+          <li>
+            <Link to="/StickyContainer">StickyContainer</Link>
+          </li>
         </ul>
       </nav>
     </div>

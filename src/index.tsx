@@ -13,13 +13,25 @@ const FerrisWheel = loadable(() => import('./FerrisWheel'), {
 const MultiRedBags = loadable(() => import('./MultiRedBags'), {
   fallback: <LoadingPage />,
 })
-const LoadingDots = loadable(() => import('./LoadingDots'))
+const LoadingDots = loadable(() => import('./LoadingDots'), {
+  fallback: <LoadingPage />,
+})
 
-const CompositeImage = loadable(() => import('./CompositeImage'))
+const CompositeImage = loadable(() => import('./CompositeImage'), {
+  fallback: <LoadingPage />,
+})
 
-const VerticalSlide = loadable(() => import('./VerticalSlide'))
+const VerticalSlide = loadable(() => import('./VerticalSlide'), {
+  fallback: <LoadingPage />,
+})
 
-const CoinsFly = loadable(() => import('./CoinsFly'))
+const CoinsFly = loadable(() => import('./CoinsFly'), {
+  fallback: <LoadingPage />,
+})
+
+const StickyContainer = loadable(() => import('./StickyContainer'), {
+  fallback: <LoadingPage />,
+})
 
 const router = createHashRouter([
   {
@@ -49,6 +61,10 @@ const router = createHashRouter([
   {
     path: '/CoinsFly',
     element: <CoinsFly />,
+  },
+  {
+    path: '/StickyContainer',
+    element: <StickyContainer />,
   },
 ])
 
