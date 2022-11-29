@@ -1,0 +1,29 @@
+.wrap {
+  position: relative;
+  width: 170px;
+  height: 240px;
+  margin-left: 90px;
+  margin-top: 90px;
+  perspective: 1500px;
+}
+
+.card {
+  width: 170px;
+  height: 240px;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.5s;
+}
+
+.front {
+  background-image: url(https://gw.alicdn.com/tfs/TB1v1EygQ9l0K4jSZFKXXXFjpXa-564-792.png);
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-image: url(https://gw.alicdn.com/tfs/TB1KAShQhv1gK0jSZFFXXb0sXXa-341-480.png);
+}

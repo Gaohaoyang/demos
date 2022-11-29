@@ -38,6 +38,9 @@ function App() {
           <li>
             <Link to="/PartyPopper">PartyPopper</Link>
           </li>
+          <li>
+            <Link to="/FlipCard">FlipCard</Link>
+          </li>
         </ul>
       </nav>
     </div>

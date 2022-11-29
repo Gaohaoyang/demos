@@ -41,6 +41,10 @@ const PartyPopper = loadable(() => import('./PartyPopper'), {
   fallback: <LoadingPage />,
 })
 
+const FlipCard = loadable(() => import('./FlipCard'), {
+  fallback: <LoadingPage />,
+})
+
 const router = createHashRouter([
   {
     path: '/',
@@ -81,6 +85,10 @@ const router = createHashRouter([
   {
     path: '/PartyPopper',
     element: <PartyPopper />,
+  },
+  {
+    path: '/FlipCard',
+    element: <FlipCard />,
   },
 ])
 
