@@ -45,6 +45,10 @@ const FlipCard = loadable(() => import('./FlipCard'), {
   fallback: <LoadingPage />,
 })
 
+const LightPassText = loadable(() => import('./LightPassText'), {
+  fallback: <LoadingPage />,
+})
+
 const router = createHashRouter([
   {
     path: '/',
@@ -89,6 +93,10 @@ const router = createHashRouter([
   {
     path: '/FlipCard',
     element: <FlipCard />,
+  },
+  {
+    path: '/LightPassText',
+    element: <LightPassText />,
   },
 ])
 

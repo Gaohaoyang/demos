@@ -41,6 +41,9 @@ function App() {
           <li>
             <Link to="/FlipCard">FlipCard</Link>
           </li>
+          <li>
+            <Link to="/LightPassText">LightPassText</Link>
+          </li>
         </ul>
       </nav>
     </div>

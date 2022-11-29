@@ -1,0 +1,104 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #37474F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  box-sizing: border-box;
+
+
+}
+
+.lightTitle {
+  width: 374px;
+  height: 99px;
+  background-image: url(https://gw.alicdn.com/imgextra/i2/O1CN01Vnb27p1yx08QmnbFU_!!6000000006644-2-tps-374-99.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mask {
+  position: absolute;
+  left: 13px;
+  top: 9px;
+
+  width: 349px;
+  height: 74px;
+  mask-size: contain;
+  mask-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01kYRh1J1upR8O2gcce_!!6000000006086-55-tps-349-74.svg);
+  mask-repeat: no-repeat;
+  position: relative;
+
+
+
+}
+
+@keyframes lightAnimation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(420px);
+  }
+}
+
+.light {
+  position: relative;
+  left: -70px;
+  top: 0;
+  width: 66px;
+  height: 69px;
+  background-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01kqz0kk1UcuHzifSpG_!!6000000002539-2-tps-66-69.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: 1.6s ease infinite lightAnimation;
+}
+
+.normalFont {
+  margin-top: 60px;
+  background-image: linear-gradient(to right, #FF5722, #FF9800);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.3));
+
+
+}
+
+.lightThrough {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01kqz0kk1UcuHzifSpG_!!6000000002539-2-tps-66-69.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -100% center;
+  animation: lightThrough 4s infinite linear;
+
+
+}
+
+@keyframes lightThrough {
+  0% {
+    background-position: -100% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
