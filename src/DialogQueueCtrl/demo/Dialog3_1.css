@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -250rpx;
+  margin-top: -342rpx;
+}
+
+.dialog-panel {
+  width: 500rpx;
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  box-sizing: border-box;
+  padding: 24rpx;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 36rpx;
+}
+
+.content {
+  margin-top: 24rpx;
+  font-size: 28rpx;
+  height: 480rpx;
+  overflow-y: auto;
+}
+
+.close {
+  margin-top: 24rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://gw.alicdn.com/imgextra/i4/O1CN01fsmd6L1vFXhkzbinV_!!6000000006143-2-tps-200-200.png);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  border-radius: 999px;
+}

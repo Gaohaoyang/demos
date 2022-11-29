@@ -1,0 +1,7 @@
+const OPEN_DIALOG = 'OPEN_DIALOG_IN_QUEUE'
+const CLOSE_DIALOG = 'CLOSE_DIALOG_IN_QUEUE'
+
+export default {
+  OPEN_DIALOG,
+  CLOSE_DIALOG,
+}
