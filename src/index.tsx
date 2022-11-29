@@ -49,6 +49,10 @@ const LightPassText = loadable(() => import('./LightPassText'), {
   fallback: <LoadingPage />,
 })
 
+const DialogQueueCtrl = loadable(() => import('./DialogQueueCtrl'), {
+  fallback: <LoadingPage />,
+})
+
 const router = createHashRouter([
   {
     path: '/',
@@ -97,6 +101,10 @@ const router = createHashRouter([
   {
     path: '/LightPassText',
     element: <LightPassText />,
+  },
+  {
+    path: '/DialogQueueCtrl',
+    element: <DialogQueueCtrl />,
   },
 ])
 

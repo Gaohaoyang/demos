@@ -44,6 +44,9 @@ function App() {
           <li>
             <Link to="/LightPassText">LightPassText</Link>
           </li>
+          <li>
+            <Link to="/DialogQueueCtrl">DialogQueueCtrl</Link>
+          </li>
         </ul>
       </nav>
     </div>
