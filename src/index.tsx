@@ -37,6 +37,10 @@ const TopNotification = loadable(() => import('./TopNotification'), {
   fallback: <LoadingPage />,
 })
 
+const PartyPopper = loadable(() => import('./PartyPopper'), {
+  fallback: <LoadingPage />,
+})
+
 const router = createHashRouter([
   {
     path: '/',
@@ -73,6 +77,10 @@ const router = createHashRouter([
   {
     path: '/TopNotification',
     element: <TopNotification />,
+  },
+  {
+    path: '/PartyPopper',
+    element: <PartyPopper />,
   },
 ])
 

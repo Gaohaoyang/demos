@@ -35,6 +35,9 @@ function App() {
           <li>
             <Link to="/TopNotification">TopNotification</Link>
           </li>
+          <li>
+            <Link to="/PartyPopper">PartyPopper</Link>
+          </li>
         </ul>
       </nav>
     </div>
