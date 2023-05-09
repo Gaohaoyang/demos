@@ -17,9 +17,9 @@ function App() {
           <li>
             <Link to="/LoadingDots">LoadingDots</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/MultiRedBags">MultiRedBags</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/CompositeImage">CompositeImage</Link>
           </li>
@@ -46,6 +46,9 @@ function App() {
           </li>
           <li>
             <Link to="/DialogQueueCtrl">DialogQueueCtrl</Link>
+          </li>
+          <li>
+            <Link to="/PageGradientScroll">PageGradientScroll</Link>
           </li>
         </ul>
       </nav>

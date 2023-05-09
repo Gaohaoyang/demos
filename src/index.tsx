@@ -53,6 +53,10 @@ const DialogQueueCtrl = loadable(() => import('./DialogQueueCtrl'), {
   fallback: <LoadingPage />,
 })
 
+const PageGradientScroll = loadable(() => import('./PageGradientScroll'), {
+  fallback: <LoadingPage />,
+})
+
 const router = createHashRouter([
   {
     path: '/',
@@ -105,6 +109,10 @@ const router = createHashRouter([
   {
     path: '/DialogQueueCtrl',
     element: <DialogQueueCtrl />,
+  },
+  {
+    path: '/PageGradientScroll',
+    element: <PageGradientScroll />,
   },
 ])
 
