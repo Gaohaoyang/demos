@@ -7,6 +7,10 @@ export const images = [
     name: 'stars',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/stars.png',
   },
+  {
+    name: 'mountains',
+    url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/mountains.png',
+  },
 ]
 
 export const tabsName = [
