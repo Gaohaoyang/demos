@@ -1,30 +1,30 @@
 export const images = [
   {
-    name: 'mountains',
+    name: 'Mountains',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/mountains.png',
   },
   {
-    name: 'clouds',
+    name: 'Clouds',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/clouds.png',
   },
   {
-    name: 'stars',
+    name: 'Stars',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/stars.png',
   },
   {
-    name: 'convertible car',
+    name: 'Convertible car',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/convertibleCar.png',
   },
   {
-    name: 'forest',
+    name: 'Forest',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/forest.png',
   },
   {
-    name: 'furniture',
+    name: 'Furniture',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/furniture.png',
   },
   {
-    name: 'ice cream',
+    name: 'Ice cream',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/iceCream.png',
   },
   {
@@ -32,22 +32,11 @@ export const images = [
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/phone.png',
   },
   {
-    name: 'squirrel',
+    name: 'Squirrel',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/squirrel.png',
   },
   {
-    name: 'sunset',
+    name: 'Sunset',
     url: 'https://cdn.jsdelivr.net/gh/Gaohaoyang/pics/demos/sunset.png',
   },
 ]
-
-// export const tabsName = [
-//   'Lorem',
-//   'Ipsum',
-//   'Consectetur',
-//   'Vitae',
-//   'Maecenas',
-//   'Sit',
-//   'Donec',
-//   'Sed',
-// ]

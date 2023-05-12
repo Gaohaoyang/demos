@@ -98,7 +98,7 @@ function PageGradientScroll() {
         }}
         ref={navbarRef}
       >
-        Page Gradient Scroll
+        {images[currentTab].name}
       </div>
       <div
         className={styles.bgImage}
