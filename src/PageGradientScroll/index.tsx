@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styles from './index.module.css'
-import { images, tabsName } from './data'
+import { images } from './data'
 import { imageToDataUri, getAverageColor, isDarkColor } from './utils'
 
 const imageHeightPx = (window.innerWidth / 16) * 9
-const randomImageIndex = Math.floor(Math.random() * images.length)
+// const randomImageIndex = Math.floor(Math.random() * images.length)
 const navBarHeightPx = 60
 
 function PageGradientScroll() {
@@ -14,8 +14,6 @@ function PageGradientScroll() {
   const tabRef = useRef<HTMLDivElement>(null)
   const bgImageMaskRef = useRef<HTMLDivElement>(null)
   const navbarRef = useRef<HTMLDivElement>(null)
-
-  console.log(isDarkBgColor)
 
   const listenWindowScroll = () => {
     window.addEventListener('scroll', () => {
@@ -39,8 +37,8 @@ function PageGradientScroll() {
     })
   }
 
-  const getAverageColorAndDetectDark = () => {
-    imageToDataUri(images[randomImageIndex].url).then((dataUri) => {
+  const getAverageColorAndDetectDark = (index: number) => {
+    imageToDataUri(images[index].url).then((dataUri) => {
       const imgElement = document.createElement('img')
       imgElement.src = dataUri
       imgElement.onload = () => {
@@ -48,6 +46,8 @@ function PageGradientScroll() {
         setAverageColor(average)
         if (isDarkColor(average)) {
           setIsDarkBgColor(true)
+        } else {
+          setIsDarkBgColor(false)
         }
       }
     })
@@ -75,30 +75,37 @@ function PageGradientScroll() {
   }
 
   useEffect(() => {
-    getAverageColorAndDetectDark()
     listenWindowScroll()
   }, [])
 
+  useEffect(() => {
+    getAverageColorAndDetectDark(currentTab)
+  }, [currentTab])
+
   return (
     <div
-      style={{
-        backgroundColor: `rgb(${averageColor[0]}, ${averageColor[1]}, ${averageColor[2]})`,
-      }}
+      style={
+        {
+          backgroundColor: `rgb(${averageColor[0]}, ${averageColor[1]}, ${averageColor[2]})`,
+        }
+      }
     >
       <div
         className={styles.navbar}
         style={{
           height: navBarHeightPx,
-          color: isDarkBgColor ? '#fff' : '#333',
+          color: isDarkBgColor ? '#fff' : '#111',
         }}
         ref={navbarRef}
       >
         Page Gradient Scroll
       </div>
-      <img
+      <div
         className={styles.bgImage}
-        src={images[randomImageIndex].url}
-        alt={images[randomImageIndex].name}
+        style={{
+          height: imageHeightPx,
+          backgroundImage: `url(${images[currentTab].url})`,
+        }}
       />
       <div
         className={styles.bgImageMask}
@@ -117,36 +124,44 @@ function PageGradientScroll() {
         />
         <div
           className={styles.tab}
-          ref={tabRef}
           style={{
             top: navBarHeightPx,
           }}
         >
-          {tabsName.map((item, index) => (
-            <button
-              key={item}
-              className={`${styles.tabItem} ${currentTab === index ? styles.tabActive : ''}`}
-              onClick={() => {
-                handleClickTab(index)
-              }}
-              type="button"
-            >
-              {item}
-            </button>
-          ))}
+          <div
+            className={styles.tabInner}
+            ref={tabRef}
+            style={{
+              backgroundColor: `rgba(${averageColor[0]}, ${averageColor[1]}, ${averageColor[2]}, 0.4)`,
+            }}
+          >
+            {images.map((item, index) => (
+              <button
+                key={item.name}
+                className={`${styles.tabItem} ${currentTab === index ? styles.tabActive : ''}`}
+                onClick={() => {
+                  handleClickTab(index)
+                }}
+                type="button"
+              >
+                {item.name}
+              </button>
+            ))}
+          </div>
         </div>
         <div className={styles.content}>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
-            <div
-              className={styles.contentItem}
-              key={item}
-              style={{
-                backgroundColor: `rgba(${averageColor[0]}, ${averageColor[1]}, ${averageColor[2]}, 0.3)`,
-              }}
-            >
-              {item}
-            </div>
-          ))}
+          <div
+            className={styles.contentInner}
+            style={{
+              backgroundColor: `rgba(${averageColor[0]}, ${averageColor[1]}, ${averageColor[2]}, 0.3)`,
+            }}
+          >
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
+              <div className={styles.contentItem} key={item}>
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
