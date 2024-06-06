@@ -3,7 +3,8 @@ import styles from './index.module.css'
 const InfiniteCarouselScroll = () => {
   console.log('InfiniteCarouselScroll')
   return (
-    <div>
+    <>
+      <h1>Infinite Carousel Scroll</h1>
       <div className={styles.container}>
         <div className={styles.box}>
           <div className={styles.loop}>
@@ -22,7 +23,7 @@ const InfiniteCarouselScroll = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
