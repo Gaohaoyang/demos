@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import loadable from '@loadable/component'
 import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
-import App from './App'
+import App from './App.old'
 import reportWebVitals from './reportWebVitals'
 import LoadingPage from './LoadingPage'
 
