@@ -1,0 +1,29 @@
+.container {
+  overflow: hidden;
+  display: flex;
+  width: 600px;
+  display: flex;
+}
+
+.box {
+  display: flex;
+  animation: infinite-slide 10s linear infinite;
+}
+
+.loop {
+  display: flex;
+}
+
+img {
+  height: 100px;
+}
+
+@keyframes infinite-slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

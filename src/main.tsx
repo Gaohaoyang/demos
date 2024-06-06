@@ -24,8 +24,7 @@ const router = createHashRouter([
   },
   {
     path: '/InfiniteCarouselScroll',
-    element: <div>InfiniteCarouselScroll</div>,
-    // lazy: lazyWrap(() => import('@/pages/Animations/InfiniteCarouselScroll')),
+    lazy: lazyWrap(() => import('@/pages/Animations/InfiniteCarouselScroll')),
   },
 ])
 
