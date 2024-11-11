@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import UnoCSS from 'unocss/vite'
+import react from '@vitejs/plugin-react-swc'
 import checker from 'vite-plugin-checker'
 
 // https://vitejs.dev/config/
@@ -7,6 +8,7 @@ export default defineConfig({
   base: '/demos',
   plugins: [
     react(),
+    UnoCSS(),
     checker({
       typescript: true,
       overlay: false,

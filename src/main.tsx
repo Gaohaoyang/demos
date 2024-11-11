@@ -1,10 +1,11 @@
+// main.ts
+import 'virtual:uno.css'
 import ReactDOM from 'react-dom/client'
 import 'normalize.css'
 import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const lazyWrap = (factory: () => Promise<any>) => {
+const lazyWrap = (factory: () => Promise<unknown>) => {
   console.log('first lazyWrap')
   return async () => {
     const page = await factory()
@@ -28,6 +29,7 @@ const router = createHashRouter([
   },
 ])
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <RouterProvider router={router} />,
-)
+const root = document.querySelector<HTMLDivElement>('root')
+if (root) {
+  ReactDOM.createRoot(root).render(<RouterProvider router={router} />)
+}
